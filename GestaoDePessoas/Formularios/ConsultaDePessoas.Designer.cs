@@ -1,98 +1,105 @@
 ﻿namespace GestaoDePessoas.Formularios
 
 {
-    partial class ConsultaDePessoas
+    partial class ListadeUsuarios
     {
-            private void InitializeComponent()
+        private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.listaDePessoasGrid = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.listaDePessoasGrid)).BeginInit();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnok = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // dataGridView2
             // 
-            this.button1.Location = new System.Drawing.Point(527, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 27);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Remover";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(667, 303);
+            this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
-            // button2
+            // btnNovo
             // 
-            this.button2.Location = new System.Drawing.Point(442, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(79, 27);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnNovo.Location = new System.Drawing.Point(427, 321);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(80, 26);
+            this.btnNovo.TabIndex = 1;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
-            // button3
+            // btnExcluir
             // 
-            this.button3.Location = new System.Drawing.Point(357, 353);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 27);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Adicionar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnExcluir.Location = new System.Drawing.Point(599, 321);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(80, 26);
+            this.btnExcluir.TabIndex = 2;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // button4
+            // btnEditar
             // 
-            this.button4.Location = new System.Drawing.Point(12, 353);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(79, 27);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "OK";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnEditar.Location = new System.Drawing.Point(513, 321);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(80, 26);
+            this.btnEditar.TabIndex = 3;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button5
+            // btnCancelar
             // 
-            this.button5.Location = new System.Drawing.Point(97, 353);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(79, 27);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Cancelar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(98, 321);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(80, 26);
+            this.btnCancelar.TabIndex = 4;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // listaDePessoasGrid
+            // btnok
             // 
-            this.listaDePessoasGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaDePessoasGrid.Location = new System.Drawing.Point(12, 12);
-            this.listaDePessoasGrid.Name = "listaDePessoasGrid";
-            this.listaDePessoasGrid.Size = new System.Drawing.Size(594, 335);
-            this.listaDePessoasGrid.TabIndex = 6;
+            this.btnok.Location = new System.Drawing.Point(12, 321);
+            this.btnok.Name = "btnok";
+            this.btnok.Size = new System.Drawing.Size(80, 26);
+            this.btnok.TabIndex = 5;
+            this.btnok.Text = "ok";
+            this.btnok.UseVisualStyleBackColor = true;
+            this.btnok.Click += new System.EventHandler(this.btnok_Click);
             // 
-            // ConsultaDePessoas
+            // ListadeUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 389);
-            this.Controls.Add(this.listaDePessoasGrid);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "ConsultaDePessoas";
-            this.Text = "Consulta de Pessoas";
-            ((System.ComponentModel.ISupportInitialize)(this.listaDePessoasGrid)).EndInit();
+            this.ClientSize = new System.Drawing.Size(691, 357);
+            this.Controls.Add(this.btnok);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnNovo);
+            this.Controls.Add(this.dataGridView2);
+            this.Name = "ListadeUsuarios";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
-        
+
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView listaDePessoasGrid;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnok;
     }
 }

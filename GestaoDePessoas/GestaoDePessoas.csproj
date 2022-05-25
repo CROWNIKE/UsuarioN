@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cadastrodepessoas.cs">
+    <Compile Include="Cadastrodepessoas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cadastrodepessoas.Designer.cs">
-      <DependentUpon>cadastrodepessoas.cs</DependentUpon>
+    <Compile Include="Cadastrodepessoas.Designer.cs">
+      <DependentUpon>Cadastrodepessoas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ConsultaDePessoas.cs">
       <SubType>Form</SubType>
@@ -58,11 +58,12 @@
     <Compile Include="Formularios\ConsultaDePessoas.Designer.cs">
       <DependentUpon>ConsultaDePessoas.cs</DependentUpon>
     </Compile>
+    <Compile Include="KeyEventARgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario.cs" />
-    <EmbeddedResource Include="cadastrodepessoas.resx">
-      <DependentUpon>cadastrodepessoas.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastrodepessoas.resx">
+      <DependentUpon>Cadastrodepessoas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ConsultaDePessoas.resx">
       <DependentUpon>ConsultaDePessoas.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace GestaoDePessoas
 {
-    partial class cadastrodepessoas
+    partial class Cadastrodepessoas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,70 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Nome = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Senha = new System.Windows.Forms.TextBox();
-            this.Email = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.caixaNome = new System.Windows.Forms.TextBox();
+            this.lblsenha = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.caixaSenha = new System.Windows.Forms.TextBox();
+            this.caixaEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.criacao = new System.Windows.Forms.DateTimePicker();
-            this.nascimento = new System.Windows.Forms.MaskedTextBox();
+            this.caixacriacao = new System.Windows.Forms.DateTimePicker();
             this.OK = new System.Windows.Forms.Button();
             this.Cancelar = new System.Windows.Forms.Button();
-            this.id = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.caixaId = new System.Windows.Forms.TextBox();
+            this.caixaNascimento = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // lblNome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nome";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(12, 63);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(35, 13);
+            this.lblNome.TabIndex = 0;
+            this.lblNome.Text = "Nome";
             // 
-            // Nome
+            // caixaNome
             // 
-            this.Nome.Location = new System.Drawing.Point(53, 56);
-            this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(164, 20);
-            this.Nome.TabIndex = 1;
+            this.caixaNome.Location = new System.Drawing.Point(53, 56);
+            this.caixaNome.Name = "caixaNome";
+            this.caixaNome.Size = new System.Drawing.Size(164, 20);
+            this.caixaNome.TabIndex = 1;
             // 
-            // label2
+            // lblsenha
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Senha";
+            this.lblsenha.AutoSize = true;
+            this.lblsenha.Location = new System.Drawing.Point(12, 98);
+            this.lblsenha.Name = "lblsenha";
+            this.lblsenha.Size = new System.Drawing.Size(38, 13);
+            this.lblsenha.TabIndex = 2;
+            this.lblsenha.Text = "Senha";
             // 
-            // label3
+            // lblEmail
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Email";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(12, 135);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(32, 13);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = "Email";
             // 
-            // Senha
+            // caixaSenha
             // 
-            this.Senha.Location = new System.Drawing.Point(53, 95);
-            this.Senha.Name = "Senha";
-            this.Senha.PasswordChar = '*';
-            this.Senha.Size = new System.Drawing.Size(164, 20);
-            this.Senha.TabIndex = 4;
+            this.caixaSenha.Location = new System.Drawing.Point(53, 95);
+            this.caixaSenha.Name = "caixaSenha";
+            this.caixaSenha.PasswordChar = '*';
+            this.caixaSenha.Size = new System.Drawing.Size(164, 20);
+            this.caixaSenha.TabIndex = 4;
+            this.caixaSenha.TextChanged += new System.EventHandler(this.caixaSenha_TextChanged);
             // 
-            // Email
+            // caixaEmail
             // 
-            this.Email.Location = new System.Drawing.Point(53, 128);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(164, 20);
-            this.Email.TabIndex = 5;
+            this.caixaEmail.Location = new System.Drawing.Point(53, 128);
+            this.caixaEmail.Name = "caixaEmail";
+            this.caixaEmail.Size = new System.Drawing.Size(164, 20);
+            this.caixaEmail.TabIndex = 5;
             // 
             // label4
             // 
@@ -111,22 +112,13 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Data Nascimento";
             // 
-            // criacao
+            // caixacriacao
             // 
-            this.criacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.criacao.Location = new System.Drawing.Point(107, 168);
-            this.criacao.Name = "criacao";
-            this.criacao.Size = new System.Drawing.Size(110, 20);
-            this.criacao.TabIndex = 8;
-            // 
-            // nascimento
-            // 
-            this.nascimento.Location = new System.Drawing.Point(107, 218);
-            this.nascimento.Mask = "00/00/0000";
-            this.nascimento.Name = "nascimento";
-            this.nascimento.Size = new System.Drawing.Size(110, 20);
-            this.nascimento.TabIndex = 9;
-            this.nascimento.ValidatingType = typeof(System.DateTime);
+            this.caixacriacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.caixacriacao.Location = new System.Drawing.Point(107, 168);
+            this.caixacriacao.Name = "caixacriacao";
+            this.caixacriacao.Size = new System.Drawing.Size(110, 20);
+            this.caixacriacao.TabIndex = 8;
             // 
             // OK
             // 
@@ -146,14 +138,7 @@
             this.Cancelar.TabIndex = 11;
             this.Cancelar.Text = "Cancelar";
             this.Cancelar.UseVisualStyleBackColor = true;
-            // 
-            // id
-            // 
-            this.id.Location = new System.Drawing.Point(53, 30);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(164, 20);
-            this.id.TabIndex = 12;
-            
+            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
             // 
             // label6
             // 
@@ -164,26 +149,42 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Id";
             // 
-            // cadastrodepessoas
+            // caixaId
+            // 
+            this.caixaId.Location = new System.Drawing.Point(53, 30);
+            this.caixaId.Name = "caixaId";
+            this.caixaId.Size = new System.Drawing.Size(164, 20);
+            this.caixaId.TabIndex = 12;
+            // 
+            // caixaNascimento
+            // 
+            this.caixaNascimento.Location = new System.Drawing.Point(108, 223);
+            this.caixaNascimento.Mask = "00/00/0000";
+            this.caixaNascimento.Name = "caixaNascimento";
+            this.caixaNascimento.Size = new System.Drawing.Size(109, 20);
+            this.caixaNascimento.TabIndex = 14;
+            this.caixaNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // Cadastrodepessoas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 367);
+            this.ClientSize = new System.Drawing.Size(241, 343);
+            this.Controls.Add(this.caixaNascimento);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.id);
+            this.Controls.Add(this.caixaId);
             this.Controls.Add(this.Cancelar);
             this.Controls.Add(this.OK);
-            this.Controls.Add(this.nascimento);
-            this.Controls.Add(this.criacao);
+            this.Controls.Add(this.caixacriacao);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Email);
-            this.Controls.Add(this.Senha);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.Nome);
-            this.Controls.Add(this.label1);
-            this.Name = "cadastrodepessoas";
+            this.Controls.Add(this.caixaEmail);
+            this.Controls.Add(this.caixaSenha);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.lblsenha);
+            this.Controls.Add(this.caixaNome);
+            this.Controls.Add(this.lblNome);
+            this.Name = "Cadastrodepessoas";
             this.Text = "Cadastro de Pessoa";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -192,19 +193,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Nome;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Senha;
-        private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.TextBox caixaNome;
+        private System.Windows.Forms.Label lblsenha;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.TextBox caixaSenha;
+        private System.Windows.Forms.TextBox caixaEmail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker criacao;
-        private System.Windows.Forms.MaskedTextBox nascimento;
+        private System.Windows.Forms.DateTimePicker caixacriacao;
         private System.Windows.Forms.Button OK;
         private System.Windows.Forms.Button Cancelar;
-        private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox caixaId;
+        private System.Windows.Forms.MaskedTextBox caixaNascimento;
     }
 }
