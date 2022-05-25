@@ -15,7 +15,7 @@ namespace GestaoDePessoas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ConsultaDePessoas());
+            Application.Run(new ListadeUsuarios());
         }
     }
 }
