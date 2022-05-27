@@ -31,7 +31,7 @@
             this.btnNovo.TabIndex = 1;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            this.btnNovo.Click += new System.EventHandler(this.AoClicarEmNovo);
             // 
             // btnExcluir
             // 
@@ -41,7 +41,7 @@
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            this.btnExcluir.Click += new System.EventHandler(this.AoClicaEmExcluir);
             // 
             // btnEditar
             // 
@@ -51,7 +51,7 @@
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEditar.Click += new System.EventHandler(this.AoClicarEmEditar);
             // 
             // btnCancelar
             // 
@@ -61,7 +61,7 @@
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.AoClicarEmCancelar);
             // 
             // btnok
             // 
@@ -71,7 +71,7 @@
             this.btnok.TabIndex = 5;
             this.btnok.Text = "Ok";
             this.btnok.UseVisualStyleBackColor = true;
-            this.btnok.Click += new System.EventHandler(this.btnOk_Click);
+            this.btnok.Click += new System.EventHandler(this.AoClicarEmOK);
             // 
             // ListadeUsuarios
             // 
@@ -83,7 +83,8 @@
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.listaUsuariosCadastrados);
             this.Name = "ListadeUsuarios";
-            this.Text = "Usuario´s";
+            this.Text = "Usuarios";
+          
             ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosCadastrados)).EndInit();
             this.ResumeLayout(false);
 

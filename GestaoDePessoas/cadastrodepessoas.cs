@@ -7,12 +7,9 @@ namespace GestaoDePessoas
     public partial class Cadastrodepessoas : Form
     {
         public Usuario Usuario { get; set; }
-        
-        //Criando o usuario.
 
         public Cadastrodepessoas(Usuario linha)
         {
-            //Salvando Usuario
             InitializeComponent();
             caixacriacao.Enabled = false;
             caixaId.Enabled = false;
@@ -26,12 +23,10 @@ namespace GestaoDePessoas
                 Usuario = linha;
                 PreencherDados(linha);
             }
-
         }
 
         private void PreencherDados(Usuario linha)
         {
-            //linha id recebe a informação inserida e manda pra caixa id e assim por diante.
             caixaId.Text = linha.Id.ToString();
             caixaNome.Text = linha.Nome;
             caixaSenha.Text = linha.Senha;
@@ -40,38 +35,27 @@ namespace GestaoDePessoas
             caixacriacao.Text = linha.DataCriacao;
         }
 
-        private void OK_Click(object sender, EventArgs e)
-        {   //pega a informação inseriada na caixaNome e etc para inserir no Usuario.nome e etc...
-            try
-            {
-                if (MessageBox.Show.("Deseja adicionar esse Usuario");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
+        private void AoClicarEmOK(object sender, EventArgs e)
+        {
             Usuario.Nome = caixaNome.Text;
             if (caixaNome.Text == "")
-            {   //messagebox insere a mensagem e executar a função
+            {
                 MessageBox.Show("Campo Nome, Obrigatório!");
                 return;
             }
             Usuario.Senha = caixaSenha.Text;
-            if (caixaSenha.Text =="")
+            if (caixaSenha.Text == "")
             {
                 MessageBox.Show("Campo Senha, Obrigatório!");
                 return;
             }
-            
+
             Usuario.Email = caixaEmail.Text;
 
+            var email = caixaEmail.Text;
+            var regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            var match = regex.Match(email);
 
-            string email = caixaEmail.Text;
-            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Match match = regex.Match(email);
-            
             if (match.Success)
             {
                 Usuario.Email = caixaEmail.Text;
@@ -79,34 +63,18 @@ namespace GestaoDePessoas
             else
             {
                 MessageBox.Show("Email está incorreto!");
-                return ;
+                return;
             }
-            
-               
+
             Usuario.DataNascimento = caixaNascimento.Text;
             Usuario.DataCriacao = caixacriacao.Text;
 
-            DialogResult =  DialogResult.OK;
+            DialogResult = DialogResult.OK;
         }
 
-        private void Cancelar_Click(object sender, EventArgs e)
+        private void AoClicarEmCancelar(object sender, EventArgs e)
         {
-            Close();       
+            Close();
         }
-
-        
-
-       
-
-}
-
-
-
-
-
-   
-   
-       
-        
-    
+    }
 }

@@ -129,7 +129,7 @@
             this.OK.TabIndex = 10;
             this.OK.Text = "OK";
             this.OK.UseVisualStyleBackColor = true;
-            this.OK.Click += new System.EventHandler(this.OK_Click);
+            this.OK.Click += new System.EventHandler(this.AoClicarEmOK);
             // 
             // Cancelar
             // 
@@ -139,7 +139,7 @@
             this.Cancelar.TabIndex = 11;
             this.Cancelar.Text = "Cancelar";
             this.Cancelar.UseVisualStyleBackColor = true;
-            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            this.Cancelar.Click += new System.EventHandler(this.AoClicarEmCancelar);
             // 
             // label6
             // 
