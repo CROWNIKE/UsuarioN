@@ -1,4 +1,6 @@
-﻿namespace GestaoDePessoas
+﻿using System;
+
+namespace GestaoDePessoas
 {
     public class Usuario
     {
@@ -10,6 +12,10 @@
         public string Senha { get; set; }
         public string Email { get; set; }
         public string DataCriacao { get; set; }
-        public string DataNascimento { get; set; }
+        public string DataNascimento  { get; set; }
+        
+        
+
+
     }
 }

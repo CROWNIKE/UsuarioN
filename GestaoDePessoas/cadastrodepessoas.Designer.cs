@@ -85,7 +85,7 @@
             this.caixaSenha.PasswordChar = '*';
             this.caixaSenha.Size = new System.Drawing.Size(164, 20);
             this.caixaSenha.TabIndex = 4;
-            this.caixaSenha.TextChanged += new System.EventHandler(this.caixaSenha_TextChanged);
+            
             // 
             // caixaEmail
             // 
@@ -93,6 +93,7 @@
             this.caixaEmail.Name = "caixaEmail";
             this.caixaEmail.Size = new System.Drawing.Size(164, 20);
             this.caixaEmail.TabIndex = 5;
+           
             // 
             // label4
             // 
