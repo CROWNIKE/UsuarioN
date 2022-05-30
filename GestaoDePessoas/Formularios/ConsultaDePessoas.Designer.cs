@@ -5,23 +5,23 @@
     {
         private void InitializeComponent()
         {
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.listaUsuariosCadastrados = new System.Windows.Forms.DataGridView();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnok = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosCadastrados)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView2
+            // listaUsuariosCadastrados
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(667, 303);
-            this.dataGridView2.TabIndex = 0;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.listaUsuariosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaUsuariosCadastrados.Location = new System.Drawing.Point(12, 12);
+            this.listaUsuariosCadastrados.Name = "listaUsuariosCadastrados";
+            this.listaUsuariosCadastrados.Size = new System.Drawing.Size(667, 303);
+            this.listaUsuariosCadastrados.TabIndex = 0;
+            this.listaUsuariosCadastrados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // btnNovo
             // 
@@ -31,7 +31,7 @@
             this.btnNovo.TabIndex = 1;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
+            this.btnNovo.Click += new System.EventHandler(this.AoClicarEmNovo);
             // 
             // btnExcluir
             // 
@@ -41,7 +41,7 @@
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            this.btnExcluir.Click += new System.EventHandler(this.AoClicaEmExcluir);
             // 
             // btnEditar
             // 
@@ -51,7 +51,7 @@
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEditar.Click += new System.EventHandler(this.AoClicarEmEditar);
             // 
             // btnCancelar
             // 
@@ -61,7 +61,7 @@
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.AoClicarEmCancelar);
             // 
             // btnok
             // 
@@ -69,9 +69,9 @@
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(80, 26);
             this.btnok.TabIndex = 5;
-            this.btnok.Text = "ok";
+            this.btnok.Text = "Ok";
             this.btnok.UseVisualStyleBackColor = true;
-            this.btnok.Click += new System.EventHandler(this.btnok_Click);
+            this.btnok.Click += new System.EventHandler(this.AoClicarEmOK);
             // 
             // ListadeUsuarios
             // 
@@ -81,9 +81,11 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnNovo);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.listaUsuariosCadastrados);
             this.Name = "ListadeUsuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Text = "Usuarios";
+          
+            ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosCadastrados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,7 +97,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView listaUsuariosCadastrados;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnEditar;

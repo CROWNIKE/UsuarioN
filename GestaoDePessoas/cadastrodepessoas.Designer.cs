@@ -85,7 +85,7 @@
             this.caixaSenha.PasswordChar = '*';
             this.caixaSenha.Size = new System.Drawing.Size(164, 20);
             this.caixaSenha.TabIndex = 4;
-            this.caixaSenha.TextChanged += new System.EventHandler(this.caixaSenha_TextChanged);
+            
             // 
             // caixaEmail
             // 
@@ -93,6 +93,7 @@
             this.caixaEmail.Name = "caixaEmail";
             this.caixaEmail.Size = new System.Drawing.Size(164, 20);
             this.caixaEmail.TabIndex = 5;
+           
             // 
             // label4
             // 
@@ -128,7 +129,7 @@
             this.OK.TabIndex = 10;
             this.OK.Text = "OK";
             this.OK.UseVisualStyleBackColor = true;
-            this.OK.Click += new System.EventHandler(this.OK_Click);
+            this.OK.Click += new System.EventHandler(this.AoClicarEmOK);
             // 
             // Cancelar
             // 
@@ -138,7 +139,7 @@
             this.Cancelar.TabIndex = 11;
             this.Cancelar.Text = "Cancelar";
             this.Cancelar.UseVisualStyleBackColor = true;
-            this.Cancelar.Click += new System.EventHandler(this.Cancelar_Click);
+            this.Cancelar.Click += new System.EventHandler(this.AoClicarEmCancelar);
             // 
             // label6
             // 
